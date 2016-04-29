@@ -54,7 +54,7 @@
 
         WKWebViewConfiguration* configuration = [[WKWebViewConfiguration alloc] init];
         configuration.userContentController = userContentController;
-        configuration.requiresUserActionForMediaPlayback = NO;
+        configuration.mediaPlaybackRequiresUserAction = NO;
 
         WKWebView* wkWebView = [[WKWebView alloc] initWithFrame:frame configuration:configuration];
 
